@@ -1,0 +1,1134 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:1888: checking for Cygwin environment
+configure:1921: checking for mingw32 environment
+configure:1952: checking for egrep
+configure:1967: checking for a sed that does not truncate output
+configure:2117: checking host system type
+configure:2138: checking target system type
+configure:2250: checking for gcc
+configure:2363: checking whether the C compiler (gcc  ) works
+configure:2379: gcc -o conftest    conftest.c  1>&5
+configure:2405: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:2410: checking whether we are using GNU C
+configure:2438: checking whether gcc accepts -g
+configure:2470: checking how to run the C preprocessor
+configure:2552: checking for icc
+configure:2576: checking for suncc
+configure:2601: checking whether gcc and cc understand -c and -o together
+configure:2652: checking how to run the C preprocessor
+configure:2732: checking for AIX
+configure:2756: checking whether ln -s works
+configure:2781: checking for system library directory
+configure:2807: checking whether to enable runpaths
+configure:2831: checking if compiler supports -R
+configure:2864: checking if compiler supports -Wl,-rpath,
+configure:2910: checking for gawk
+configure:2970: checking for bison
+configure:3010: checking for bison version
+configure:3050: checking for flex
+configure:3084: checking for yywrap in -lfl
+configure:3127: checking lex output file root
+configure:3148: checking whether yytext is a pointer
+configure:3191: checking for working const
+configure:3271: checking for flex version
+configure:3315: checking for re2c
+configure:3343: checking for re2c version
+configure:3621: checking whether to force non-PIC code in shared modules
+configure:3651: checking whether /dev/urandom exists
+configure:3730: gcc -o conftest -g -O2 -pthread   conftest.c  1>&5
+configure:3750: checking for pthreads_cflags
+configure:3820: checking for pthreads_lib
+configure:3994: checking for AOLserver support
+configure:4251: checking for Apache 1.x module support via DSO through APXS
+configure:4574: checking for Apache 1.x module support
+configure:5407: checking whether to enable Apache charset compatibility option
+configure:5580: checking for Apache 2.0 filter-module support via DSO through APXS
+configure:6428: checking for Apache 2.0 handler-module support via DSO through APXS
+configure:7277: checking for Apache 1.x (hooks) module support via DSO through APXS
+configure:7600: checking for Apache 1.x (hooks) module support
+configure:8433: checking whether to enable Apache charset compatibility option
+configure:8607: checking for Caudium support
+configure:8958: checking for CLI build
+configure:9008: checking for Continuity support
+configure:9285: checking for embedded SAPI library support
+configure:9502: checking for Zeus ISAPI support
+configure:9751: checking for Milter support
+configure:10035: checking for NSAPI support
+configure:10387: checking for PHTTPD support
+configure:10633: checking for Pi3Web support
+configure:11000: checking whether Roxen module is build using ZTS
+configure:11024: checking for Roxen/Pike support
+configure:11302: checking for thttpd
+configure:11563: checking for TUX
+configure:11809: checking for webjames
+configure:12161: checking whether to build CGI binary
+configure:12184: checking whether to enable fastcgi support
+configure:12199: checking whether to force Apache CGI redirect
+configure:12212: checking whether to discard path_info + path_translated
+configure:12225: checking whether to enable path info checking
+configure:12437: checking for chosen SAPI module
+configure:12494: checking for sendmail
+configure:12533: checking whether system uses EBCDIC
+configure:12580: checking whether byte ordering is bigendian
+configure:12632: checking whether writing to stdout works
+configure:12736: checking for socket
+configure:12764: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:12993: checking for socketpair
+configure:13021: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:13250: checking for htonl
+configure:13278: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:13507: checking for gethostname
+configure:13535: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:13764: checking for gethostbyaddr
+configure:13792: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:14021: checking for yp_get_default_domain
+configure:14049: gcc -o conftest -g -O2   conftest.c  1>&5
+/tmp/ccrwKopI.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:14043: undefined reference to `yp_get_default_domain'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 14026 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char yp_get_default_domain(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char yp_get_default_domain();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_yp_get_default_domain) || defined (__stub___yp_get_default_domain)
+choke me
+#else
+yp_get_default_domain();
+#endif
+
+; return 0; }
+configure:14067: checking for __yp_get_default_domain
+configure:14095: gcc -o conftest -g -O2   conftest.c  1>&5
+/tmp/cczmKDPN.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:14089: undefined reference to `__yp_get_default_domain'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 14072 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char __yp_get_default_domain(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char __yp_get_default_domain();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub___yp_get_default_domain) || defined (__stub_____yp_get_default_domain)
+choke me
+#else
+__yp_get_default_domain();
+#endif
+
+; return 0; }
+configure:14133: checking for yp_get_default_domain in -lnsl
+configure:14152: gcc -o conftest -g -O2   conftest.c -lnsl   1>&5
+configure:14227: gcc -o conftest -g -O2   conftest.c  -lnsl 1>&5
+configure:14279: checking for dlopen
+configure:14307: gcc -o conftest -g -O2   conftest.c -lnsl  1>&5
+/tmp/ccN0xEB3.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:14301: undefined reference to `dlopen'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 14284 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char dlopen(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dlopen();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_dlopen) || defined (__stub___dlopen)
+choke me
+#else
+dlopen();
+#endif
+
+; return 0; }
+configure:14325: checking for __dlopen
+configure:14353: gcc -o conftest -g -O2   conftest.c -lnsl  1>&5
+/tmp/ccNPSjW8.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:14347: undefined reference to `__dlopen'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 14330 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char __dlopen(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char __dlopen();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub___dlopen) || defined (__stub_____dlopen)
+choke me
+#else
+__dlopen();
+#endif
+
+; return 0; }
+configure:14391: checking for dlopen in -ldl
+configure:14410: gcc -o conftest -g -O2   conftest.c -ldl  -lnsl  1>&5
+configure:14485: gcc -o conftest -g -O2   conftest.c -lnsl  -ldl 1>&5
+configure:14537: checking for sin in -lm
+configure:14590: checking for res_search
+configure:14618: gcc -o conftest -g -O2   conftest.c -lm -ldl -lnsl  1>&5
+/tmp/ccHT9OZm.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:14612: undefined reference to `res_search'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 14595 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char res_search(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char res_search();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_res_search) || defined (__stub___res_search)
+choke me
+#else
+res_search();
+#endif
+
+; return 0; }
+configure:14636: checking for __res_search
+configure:14664: gcc -o conftest -g -O2   conftest.c -lm -ldl -lnsl  1>&5
+/tmp/ccoUzt7k.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:14658: undefined reference to `__res_search'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 14641 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char __res_search(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char __res_search();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub___res_search) || defined (__stub_____res_search)
+choke me
+#else
+__res_search();
+#endif
+
+; return 0; }
+configure:14702: checking for res_search in -lresolv
+configure:14721: gcc -o conftest -g -O2   conftest.c -lresolv  -lm -ldl -lnsl  1>&5
+/tmp/ccE4ukOp.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:14717: undefined reference to `res_search'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 14710 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char res_search();
+
+int main() {
+res_search()
+; return 0; }
+configure:14741: checking for __res_search in -lresolv
+configure:14760: gcc -o conftest -g -O2   conftest.c -lresolv  -lm -ldl -lnsl  1>&5
+configure:14796: gcc -o conftest -g -O2   conftest.c -lm -ldl -lnsl  -lresolv 1>&5
+configure:15126: checking for inet_aton
+configure:15154: gcc -o conftest -g -O2   conftest.c -lresolv -lm -ldl -lnsl  1>&5
+configure:15522: checking for dn_skipname
+configure:15550: gcc -o conftest -g -O2   conftest.c -lresolv -lm -ldl -lnsl  1>&5
+/tmp/ccmh1XuH.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:15544: undefined reference to `dn_skipname'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 15527 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char dn_skipname(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dn_skipname();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_dn_skipname) || defined (__stub___dn_skipname)
+choke me
+#else
+dn_skipname();
+#endif
+
+; return 0; }
+configure:15568: checking for __dn_skipname
+configure:15596: gcc -o conftest -g -O2   conftest.c -lresolv -lm -ldl -lnsl  1>&5
+configure:15915: checking for ANSI C header files
+configure:16023: checking for dirent.h that defines DIR
+configure:16061: checking for opendir in -ldir
+configure:16202: checking for inttypes.h
+configure:16202: checking for stdint.h
+configure:16202: checking for dirent.h
+configure:16202: checking for ApplicationServices/ApplicationServices.h
+configure:16202: checking for sys/param.h
+configure:16202: checking for sys/types.h
+configure:16202: checking for sys/time.h
+configure:16202: checking for netinet/in.h
+configure:16202: checking for alloca.h
+configure:16202: checking for arpa/inet.h
+configure:16202: checking for arpa/nameser.h
+configure:16202: checking for assert.h
+configure:16202: checking for crypt.h
+configure:16202: checking for fcntl.h
+configure:16202: checking for grp.h
+configure:16202: checking for ieeefp.h
+configure:16202: checking for langinfo.h
+configure:16202: checking for limits.h
+configure:16202: checking for locale.h
+configure:16202: checking for monetary.h
+configure:16202: checking for netdb.h
+configure:16202: checking for pwd.h
+configure:16202: checking for resolv.h
+configure:16202: checking for signal.h
+configure:16202: checking for stdarg.h
+configure:16202: checking for stdlib.h
+configure:16202: checking for string.h
+configure:16202: checking for syslog.h
+configure:16202: checking for sysexits.h
+configure:16202: checking for sys/ioctl.h
+configure:16202: checking for sys/file.h
+configure:16202: checking for sys/mman.h
+configure:16202: checking for sys/mount.h
+configure:16202: checking for sys/poll.h
+configure:16202: checking for sys/resource.h
+configure:16202: checking for sys/select.h
+configure:16202: checking for sys/socket.h
+configure:16202: checking for sys/stat.h
+configure:16202: checking for sys/statfs.h
+configure:16202: checking for sys/statvfs.h
+configure:16202: checking for sys/vfs.h
+configure:16202: checking for sys/sysexits.h
+configure:16202: checking for sys/varargs.h
+configure:16202: checking for sys/wait.h
+configure:16202: checking for sys/loadavg.h
+configure:16202: checking for termios.h
+configure:16202: checking for unistd.h
+configure:16202: checking for unix.h
+configure:16202: checking for utime.h
+configure:16202: checking for sys/utsname.h
+configure:16202: checking for sys/ipc.h
+configure:16202: checking for dlfcn.h
+configure:16202: checking for assert.h
+configure:16247: checking for mach-o/dyld.h
+configure:16288: checking for fopencookie
+configure:16348: gcc -c -g -O2  conftest.c 1>&5
+configure:16399: gcc -o conftest -g -O2   conftest.c -lresolv -lm -ldl -lnsl  1>&5
+configure: In function 'main':
+configure:16392:5: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+configure:16463: checking for broken getcwd
+configure:16478: checking for broken libc stdio
+configure:16567: checking whether struct tm is in sys/time.h or time.h
+configure:16601: checking for tm_zone in struct tm
+configure:16673: checking for missing declarations of reentrant functions
+configure:16682: gcc -c -g -O2  conftest.c 1>&5
+configure:16707: gcc -c -g -O2  conftest.c 1>&5
+configure:16732: gcc -c -g -O2  conftest.c 1>&5
+configure:16757: gcc -c -g -O2  conftest.c 1>&5
+configure:16782: gcc -c -g -O2  conftest.c 1>&5
+configure:16803: checking for fclose declaration
+configure:16812: gcc -c -g -O2  conftest.c 1>&5
+configure:16838: checking for tm_gmtoff in struct tm
+configure:16874: checking for struct flock
+configure:16916: checking for socklen_t
+configure:16959: checking size of size_t
+configure:16998: checking size of long long
+configure:17037: checking size of long long int
+configure:17076: checking size of long
+configure:17115: checking size of int
+configure:17156: checking size of intmax_t
+configure:17236: checking size of ssize_t
+configure:17316: checking size of ptrdiff_t
+configure:17396: checking for st_blksize in struct stat
+configure:17431: checking for st_blocks in struct stat
+configure:17471: checking for st_rdev in struct stat
+configure:17506: checking for size_t
+configure:17539: checking for uid_t in sys/types.h
+configure:17575: checking for struct sockaddr_storage
+configure:17609: checking for field sa_len in struct sockaddr
+configure:17646: checking for IPv6 support
+configure:17676: checking for vprintf
+configure:17863: checking for alphasort
+configure:17863: checking for asctime_r
+configure:17863: checking for chroot
+configure:17863: checking for ctime_r
+configure:17863: checking for cuserid
+configure:17863: checking for crypt
+configure:17863: checking for flock
+configure:17863: checking for ftok
+configure:17863: checking for funopen
+configure:17863: checking for gai_strerror
+configure:17863: checking for gcvt
+configure:17863: checking for getloadavg
+configure:17863: checking for getlogin
+configure:17863: checking for getprotobyname
+configure:17863: checking for getprotobynumber
+configure:17863: checking for getservbyname
+configure:17863: checking for getservbyport
+configure:17863: checking for getrusage
+configure:17863: checking for gettimeofday
+configure:17863: checking for gmtime_r
+configure:17863: checking for getpwnam_r
+configure:17863: checking for getgrnam_r
+configure:17863: checking for getpwuid_r
+configure:17863: checking for grantpt
+configure:17863: checking for inet_ntoa
+configure:17863: checking for inet_ntop
+configure:17863: checking for inet_pton
+configure:17863: checking for isascii
+configure:17863: checking for link
+configure:17863: checking for localtime_r
+configure:17863: checking for lockf
+configure:17863: checking for lchown
+configure:17863: checking for lrand48
+configure:17863: checking for memcpy
+configure:17863: checking for memmove
+configure:17863: checking for mkstemp
+configure:17863: checking for mmap
+configure:17863: checking for nl_langinfo
+configure:17863: checking for perror
+configure:17863: checking for poll
+configure:17863: checking for ptsname
+configure:17863: checking for putenv
+configure:17863: checking for realpath
+configure:17863: checking for random
+configure:17863: checking for rand_r
+configure:17863: checking for regcomp
+configure:17863: checking for res_search
+configure:17863: checking for scandir
+configure:17863: checking for setitimer
+configure:17863: checking for setlocale
+configure:17863: checking for localeconv
+configure:17863: checking for setenv
+configure:17863: checking for setpgid
+configure:17863: checking for setsockopt
+configure:17863: checking for setvbuf
+configure:17863: checking for shutdown
+configure:17863: checking for sin
+configure:17863: checking for snprintf
+configure:17863: checking for srand48
+configure:17863: checking for srandom
+configure:17863: checking for statfs
+configure:17863: checking for statvfs
+configure:17863: checking for std_syslog
+configure:17863: checking for strcasecmp
+configure:17863: checking for strcoll
+configure:17863: checking for strdup
+configure:17863: checking for strerror
+configure:17863: checking for strftime
+configure:17863: checking for strnlen
+configure:17863: checking for strptime
+configure:17863: checking for strstr
+configure:17863: checking for strtok_r
+configure:17863: checking for symlink
+configure:17863: checking for tempnam
+configure:17863: checking for tzset
+configure:17863: checking for unlockpt
+configure:17863: checking for unsetenv
+configure:17863: checking for usleep
+configure:17863: checking for utime
+configure:17863: checking for vsnprintf
+configure:17917: checking for nanosleep
+configure:18068: checking for getaddrinfo
+configure:18158: checking for strlcat
+configure:18158: checking for strlcpy
+configure:18158: checking for getopt
+configure:18213: checking whether utime accepts a null argument
+configure:18260: checking for working alloca.h
+configure:18293: checking for alloca
+configure:18493: checking for declared timezone
+configure:18540: checking for type of reentrant time-related functions
+configure:18639: checking for readdir_r
+configure:18689: checking for type of readdir_r
+configure:18788: checking for in_addr_t
+configure:18827: checking for crypt_r
+configure:19012: checking whether to include gcov symbols
+configure:19175: checking whether to include debugging symbols
+configure:19226: checking layout of installed files
+configure:19261: checking path to configuration file
+configure:19295: checking where to scan for configuration files
+configure:19331: checking whether to enable safe mode by default
+configure:19366: checking for safe mode exec dir
+configure:19410: checking whether to enable PHP's own SIGCHLD handler
+configure:19448: checking whether to enable magic quotes by default
+configure:19486: checking whether to explicitly link against libgcc
+configure:19566: checking whether to enable short tags by default
+configure:19604: checking whether to enable dmalloc
+configure:19692: checking whether to enable IPv6 support
+configure:19722: checking how big to make fd sets
+configure:19793: checking size of long
+configure:19832: checking size of int
+configure:19872: checking for int32_t
+configure:19920: checking for uint32_t
+configure:19977: checking for sys/types.h
+configure:19977: checking for inttypes.h
+configure:19977: checking for stdint.h
+configure:19977: checking for string.h
+configure:19977: checking for stdlib.h
+configure:20017: checking for strtoll
+configure:20017: checking for atoll
+configure:20017: checking for strftime
+configure:20471: checking whether to enable LIBXML support
+configure:20519: checking libxml2 install dir
+configure:20548: checking for xml2-config path
+configure:20706: checking whether libxml build works
+configure:21098: checking for OpenSSL support
+configure:21145: checking for Kerberos support
+configure:21474: checking for krb5-config
+configure:21834: checking for DSA_get_default_method in -lssl
+configure:21895: checking for pkg-config
+configure:22100: checking for OpenSSL version
+configure:22257: checking for CRYPTO_free in -lcrypto
+configure:22433: checking for SSL_CTX_set_ssl_version in -lssl
+configure:22574: checking for PCRE support
+configure:23428: checking for ZLIB support
+configure:23475: checking if the location of ZLIB install directory is defined
+configure:23921: checking for gzgets in -lz
+configure:24080: checking whether to enable bc style precision math functions
+configure:24448: checking for BZip2 support
+configure:24496: checking for BZip2 in default path
+configure:24609: checking for BZ2_bzerror in -lbz2
+configure:25096: checking whether to enable calendar conversion support
+configure:25443: checking whether to enable ctype functions
+configure:25790: checking for cURL support
+configure:25837: checking if we should use cURL for url streams
+configure:25882: checking for cURL 7.10.5 or greater
+configure:26120: checking for SSL support in libcurl
+configure:26133: checking how to run the C preprocessor
+configure:26213: checking for openssl support in libcurl
+configure:26239: gcc -o conftest    -L/usr/lib/x86_64-linux-gnu conftest.c -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err 1>&5
+/tmp/ccY8Qrf1.o: In function `main':
+conftest.c:(.text+0xa5): undefined reference to `curl_version_info'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 26220 "configure"
+#include "confdefs.h"
+
+#include <curl/curl.h>
+
+int main(int argc, char *argv[])
+{
+  curl_version_info_data *data = curl_version_info(CURLVERSION_NOW);
+
+  if (data && data->ssl_version && *data->ssl_version) {
+    const char *ptr = data->ssl_version;
+
+    while(*ptr == ' ') ++ptr;
+    return strncasecmp(ptr, "OpenSSL", sizeof("OpenSSL")-1);
+  }
+  return 1;
+}
+    
+configure:26302: checking for gnutls support in libcurl
+configure:26328: gcc -o conftest    -L/usr/lib/x86_64-linux-gnu conftest.c -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err 1>&5
+/tmp/ccmLQPb9.o: In function `main':
+conftest.c:(.text+0xa5): undefined reference to `curl_version_info'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 26309 "configure"
+#include "confdefs.h"
+
+#include <curl/curl.h>
+
+int main(int argc, char *argv[])
+{
+  curl_version_info_data *data = curl_version_info(CURLVERSION_NOW);
+  
+  if (data && data->ssl_version && *data->ssl_version) {
+    const char *ptr = data->ssl_version;
+
+    while(*ptr == ' ') ++ptr;
+    return strncasecmp(ptr, "GnuTLS", sizeof("GnuTLS")-1);
+  }
+  return 1;
+}
+
+configure:26486: checking for curl_easy_perform in -lcurl
+configure:26641: checking for curl_version_info in -lcurl
+configure:26794: checking for curl_easy_strerror in -lcurl
+configure:26947: checking for curl_multi_strerror in -lcurl
+configure:27867: checking for QDBM support
+configure:28198: checking for GDBM support
+configure:28515: checking for NDBM support
+configure:28834: checking for Berkeley DB4 support
+configure:29157: checking for Berkeley DB3 support
+configure:29480: checking for Berkeley DB2 support
+configure:29719: checking for DB1 support
+configure:30074: checking for DBM support
+configure:30483: checking for CDB support
+configure:30514: checking for INI File support
+configure:30545: checking for FlatFile support
+configure:30560: checking whether to enable DBA interface
+configure:30890: checking whether to enable dbase support
+configure:31237: checking whether to enable DOM support
+configure:31316: checking for xml2-config path
+configure:31474: checking whether libxml build works
+configure:31924: checking whether to enable EXIF (metadata from images) support
+configure:32271: checking for FrontBase SQL92 (fbsql) support
+configure:32778: checking for FDF support
+configure:33609: checking whether to enable input filter support
+configure:33656: checking pcre install prefix
+configure:34075: checking whether to enable FTP support
+configure:34122: checking OpenSSL dir for FTP
+configure:34668: checking for OpenSSL version
+configure:34825: checking for CRYPTO_free in -lcrypto
+configure:35001: checking for SSL_CTX_set_ssl_version in -lssl
+configure:35139: checking for GD support
+configure:35187: checking for the location of libjpeg
+configure:35215: checking for the location of libpng
+configure:35270: checking for the location of libXpm
+configure:35296: checking for FreeType 1.x support
+configure:35322: checking for FreeType 2
+configure:35348: checking for T1lib support
+configure:35374: checking whether to enable truetype string function in GD
+configure:35400: checking whether to enable JIS-mapped Japanese font support in GD
+configure:37707: checking for jpeg_read_header in -ljpeg
+configure:38008: checking for png_write_image in -lpng
+configure:38407: checking for XpmFreeXpmImage in -lXpm
+configure:38801: checking for FT_New_Face in -lfreetype
+configure:39183: checking for FreeType 1 support
+configure:39691: checking for gdImageString16 in -lgd
+configure:39839: checking for gdImagePaletteCopy in -lgd
+configure:39987: checking for gdImageCreateFromPng in -lgd
+configure:40135: checking for gdImageCreateFromGif in -lgd
+configure:40283: checking for gdImageGif in -lgd
+configure:40431: checking for gdImageWBMP in -lgd
+configure:40579: checking for gdImageCreateFromJpeg in -lgd
+configure:40727: checking for gdImageCreateFromXpm in -lgd
+configure:40875: checking for gdImageCreateFromGd2 in -lgd
+configure:41023: checking for gdImageCreateTrueColor in -lgd
+configure:41171: checking for gdImageSetTile in -lgd
+configure:41319: checking for gdImageEllipse in -lgd
+configure:41338: gcc -o conftest -g -O2   -L/usr/lib/x86_64-linux-gnu -lgd -lfreetype -lX11 -lXpm -lpng -lz -ljpeg conftest.c -lgd  -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 1>&5
+/tmp/ccVSwim2.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:41334: undefined reference to `gdImageEllipse'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 41327 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gdImageEllipse();
+
+int main() {
+gdImageEllipse()
+; return 0; }
+configure:41467: checking for gdImageSetBrush in -lgd
+configure:41615: checking for gdImageStringTTF in -lgd
+configure:41763: checking for gdImageStringFT in -lgd
+configure:41911: checking for gdImageStringFTEx in -lgd
+configure:42059: checking for gdImageColorClosestHWB in -lgd
+configure:42207: checking for gdImageColorResolve in -lgd
+configure:42355: checking for gdImageGifCtx in -lgd
+configure:42503: checking for gdCacheCreate in -lgd
+configure:42651: checking for gdFontCacheShutdown in -lgd
+configure:42799: checking for gdFreeFontCache in -lgd
+configure:42947: checking for gdFontCacheMutexSetup in -lgd
+configure:42966: gcc -o conftest -g -O2   -L/usr/lib/x86_64-linux-gnu -lgd -lfreetype -lX11 -lXpm -lpng -lz -ljpeg conftest.c -lgd  -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 1>&5
+/tmp/ccZNBpNw.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:42962: undefined reference to `gdFontCacheMutexSetup'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 42955 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gdFontCacheMutexSetup();
+
+int main() {
+gdFontCacheMutexSetup()
+; return 0; }
+configure:43095: checking for gdNewDynamicCtxEx in -lgd
+configure:43183: gcc -c -g -O2 -I/usr/include conftest.c 1>&5
+configure: In function 'main':
+configure:43178:14: warning: assignment makes pointer from integer without a cast [enabled by default]
+configure:43676: checking for gdImageCreate in -lgd
+configure:43760: checking for GNU gettext support
+configure:43818: checking for bindtextdomain in -lintl
+configure:43859: checking for bindtextdomain in -lc
+configure:44342: checking for ngettext in -lc
+configure:44385: checking for dngettext in -lc
+configure:44428: checking for dcngettext in -lc
+configure:44471: checking for bind_textdomain_codeset in -lc
+configure:44521: checking for GNU MP support
+configure:44672: checking for __gmp_randinit_lc_2exp_size in -lgmp
+configure:45307: checking whether to enable hash support
+configure:45357: checking whether byte ordering is bigendian
+configure:45408: checking size of short
+configure:45447: checking size of int
+configure:45486: checking size of long
+configure:45525: checking size of long long
+configure:45892: checking for iconv support
+configure:45956: checking for iconv
+configure:46579: checking if iconv is glibc's
+configure:46588: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 1>&5
+configure:46825: checking if iconv supports errno
+configure:46860: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 1>&5
+configure:46892: checking if your cpp allows macro usage in include lines
+configure:46904: gcc -c -I/usr/include -g -O2  conftest.c 1>&5
+configure:47260: checking for IMAP support
+configure:47307: checking for IMAP Kerberos support
+configure:47333: checking for IMAP SSL support
+configure:49682: checking for InterBase support
+configure:50620: checking whether to enable JavaScript Object Serialization support
+configure:50669: checking for ANSI C header files
+configure:51099: checking for LDAP support
+configure:51146: checking for LDAP Cyrus SASL support
+configure:53491: checking for 3 arg ldap_set_rebind_proc
+configure:53526: checking for ldap_parse_result
+configure:53526: checking for ldap_parse_reference
+configure:53526: checking for ldap_start_tls_s
+configure:53904: checking for ldap_bind_s
+configure:53983: checking whether to enable multibyte string support
+configure:54030: checking whether to enable multibyte regex support
+configure:54056: checking whether to check multibyte regex backtrack
+configure:54082: checking for external libmbfl
+configure:54118: checking for variable length prototypes and stdarg.h
+configure:54172: checking for stdlib.h
+configure:54172: checking for string.h
+configure:54172: checking for strings.h
+configure:54172: checking for unistd.h
+configure:54172: checking for sys/time.h
+configure:54172: checking for sys/times.h
+configure:54172: checking for stdarg.h
+configure:54209: checking size of int
+configure:54248: checking size of short
+configure:54287: checking size of long
+configure:54326: checking for working const
+configure:54401: checking whether time.h and sys/time.h may both be included
+configure:54438: checking for working alloca.h
+configure:54471: checking for alloca
+configure:54670: checking for 8-bit clean memcmp
+configure:55684: checking for mcrypt support
+configure:55740: checking for libmcrypt version
+configure:55866: checking for mcrypt_module_open in -lmcrypt
+configure:56530: checking for mhash support
+configure:57017: checking whether to include mime_magic support
+configure:57386: checking for MING support
+configure:58629: checking for mSQL support
+configure:59153: checking for MSSQL support via FreeTDS
+configure:59817: checking for MySQL support
+configure:59864: checking for specified location of the MySQL UNIX socket
+configure:59922: checking for MySQL UNIX socket location
+configure:60113: checking for mysql_close in -lmysqlclient
+configure:61041: checking for MySQLi support
+configure:61088: checking whether to enable embedded MySQLi support
+configure:61239: checking for mysql_set_server_option in -lmysqlclient
+configure:61506: checking for mysql_stmt_field_count in -lmysqlclient
+configure:61874: checking for ncurses support
+configure:62977: checking for Oracle (OCI8) support
+configure:69276: checking whether to enable pcntl support
+configure:69855: checking whether to enable PDO support
+configure:70291: checking for PDO_DBLIB support via FreeTDS
+configure:70508: checking for PDO includes
+configure:70514: checking for PDO includes
+configure:70828: checking for dnet_addr in -ldnet_stub
+configure:71012: checking for Firebird support for PDO
+configure:72002: checking for MySQL support for PDO
+configure:72080: checking for mysql_config
+configure:72416: checking for mysql_query in -lmysqlclient
+configure:73154: checking for mysql_commit
+configure:73154: checking for mysql_stmt_prepare
+configure:73154: checking for mysql_next_result
+configure:73154: checking for mysql_sqlstate
+configure:73211: checking for PDO includes
+configure:73576: checking Oracle OCI support for PDO
+configure:76148: checking for ODBC v3 support for PDO
+configure:77274: checking for PostgreSQL support for PDO
+configure:78623: checking for sqlite 3 support for PDO
+configure:78671: checking for PDO includes
+configure:79773: checking size of char *
+configure:79839: checking for usleep
+configure:79839: checking for nanosleep
+configure:79895: checking for time.h
+configure:80029: checking for fdatasync in -lrt
+configure:80131: checking for PostgreSQL support
+configure:81767: checking whether to enable POSIX-like functions
+configure:82297: checking for PSPELL support
+configure:82850: checking for new_aspell_config in -laspell
+configure:83043: checking for libedit readline replacement
+configure:83091: checking for readline support
+configure:84653: checking for recode support
+configure:85478: checking whether to enable reflection support
+configure:85804: checking whether to enable PHP sessions
+configure:85851: checking for mm support
+configure:85876: checking whether pwrite works
+configure:85996: checking whether pread works
+configure:86621: checking whether to enable shmop support
+configure:86968: checking whether to enable SimpleXML support
+configure:87047: checking for xml2-config path
+configure:87205: checking whether libxml build works
+configure:87620: checking for SNMP support
+configure:87667: checking OpenSSL dir for SNMP
+configure:87693: checking whether to enable UCD SNMP hack
+configure:89496: checking whether to enable SOAP support
+configure:89575: checking for xml2-config path
+configure:89733: checking whether libxml build works
+configure:90110: checking whether to enable sockets support
+configure:90155: checking for struct cmsghdr
+configure:90195: checking for hstrerror
+configure:90195: checking for socketpair
+configure:90251: checking for netdb.h
+configure:90251: checking for netinet/tcp.h
+configure:90251: checking for sys/un.h
+configure:90251: checking for errno.h
+configure:90298: gcc -c -I/usr/include -g -O2  conftest.c 1>&5
+configure:90615: checking enable SPL suppport
+configure:90660: checking whether zend_object_value is packed
+configure:90679: gcc -o conftest -I/usr/include -g -O2  -I/home/chrisporterpace/phpsrc/php-5.2.17/ext/date/lib -I/usr/include/libxml2 -I/usr/include/freetype2 -I/home/chrisporterpace/phpsrc/php-5.2.17/ext/mbstring/oniguruma -I/home/chrisporterpace/phpsrc/php-5.2.17/ext/mbstring/libmbfl -I/home/chrisporterpace/phpsrc/php-5.2.17/ext/mbstring/libmbfl/mbfl -I/usr/include/mysql -I/usr/include/pspell -I/home/chrisporterpace/phpsrc/php-5.2.17  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 1>&5
+configure: failed program was:
+#line 90670 "configure"
+#include "confdefs.h"
+
+#include "Zend/zend_types.h"
+int main(int argc, char **argv) {
+	return ((sizeof(zend_object_handle) + sizeof(zend_object_handlers*)) == sizeof(zend_object_value)) ? 0 : 1;
+}
+  
+configure:91044: checking for sqlite support
+configure:91091: checking whether to enable UTF-8 support in sqlite (default: ISO-8859-1)
+configure:91122: checking for PDO includes
+configure:91466: checking for lemon
+configure:91907: checking size of char *
+configure:91988: checking for usleep
+configure:91988: checking for nanosleep
+configure:92044: checking for time.h
+configure:92085: checking whether flush should be called explicitly after a buffered io
+configure:92162: checking for crypt in -lcrypt
+configure:92210: checking for standard DES crypt
+configure:92270: checking for extended DES crypt
+configure:92330: checking for MD5 crypt
+configure:92428: checking for Blowfish crypt
+configure:92496: checking for getcwd
+configure:92496: checking for getwd
+configure:92496: checking for asinh
+configure:92496: checking for acosh
+configure:92496: checking for atanh
+configure:92496: checking for log1p
+configure:92496: checking for hypot
+configure:92496: checking for glob
+configure:92496: checking for strfmon
+configure:92496: checking for nice
+configure:92496: checking for fpclass
+configure:92496: checking for isinf
+configure:92496: checking for isnan
+configure:92549: checking for working fnmatch
+configure:92730: checking which regex library to use
+configure:92734: checking whether rounding works as expected
+configure:92755: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lcrypt -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 -lcrypt 1>&5
+configure:92781: checking for fork
+configure:92840: checking if your OS can spawn processes with inherited handles
+configure:92865: checking for res_nmkquery
+configure:92893: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lcrypt -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 -lcrypt 1>&5
+/tmp/ccvfoftR.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:92887: undefined reference to `res_nmkquery'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 92870 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char res_nmkquery(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char res_nmkquery();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_res_nmkquery) || defined (__stub___res_nmkquery)
+choke me
+#else
+res_nmkquery();
+#endif
+
+; return 0; }
+configure:92911: checking for __res_nmkquery
+configure:92939: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lcrypt -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 -lcrypt 1>&5
+configure:93400: checking for res_nsend
+configure:93428: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lcrypt -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 -lcrypt 1>&5
+/tmp/ccRl9p87.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:93422: undefined reference to `res_nsend'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 93405 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char res_nsend(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char res_nsend();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_res_nsend) || defined (__stub___res_nsend)
+choke me
+#else
+res_nsend();
+#endif
+
+; return 0; }
+configure:93446: checking for __res_nsend
+configure:93474: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lcrypt -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 -lcrypt 1>&5
+configure:93935: checking for dn_expand
+configure:93963: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lcrypt -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 -lcrypt 1>&5
+/tmp/ccWMiUti.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:93957: undefined reference to `dn_expand'
+collect2: ld returned 1 exit status
+configure: failed program was:
+#line 93940 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char dn_expand(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dn_expand();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_dn_expand) || defined (__stub___dn_expand)
+choke me
+#else
+dn_expand();
+#endif
+
+; return 0; }
+configure:93981: checking for __dn_expand
+configure:94009: gcc -o conftest -I/usr/include -g -O2  -L/usr//lib/x86_64-linux-gnu  -L/usr/lib/x86_64-linux-gnu conftest.c -lcrypt -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 -lcrypt 1>&5
+configure:94477: checking whether atof() accepts NAN
+configure:94535: checking whether atof() accepts INF
+configure:94596: checking whether HUGE_VAL == INF
+configure:94657: checking whether HUGE_VAL + -HUGEVAL == NAN
+configure:94720: checking whether strptime() declaration fails
+configure:94770: checking for wchar.h
+configure:94809: checking for mblen
+configure:94864: checking for mbrlen
+configure:94864: checking for mbsinit
+configure:94917: checking for mbstate_t
+configure:95323: checking for Sybase support
+configure:96001: checking for Sybase-CT support
+configure:98348: checking whether to enable System V IPC support
+configure:98394: checking for sys/msg.h
+configure:98731: checking whether to enable System V semaphore support
+configure:99072: checking for union semun
+configure:99124: checking whether to enable System V shared memory support
+configure:99471: checking for TIDY support
+configure:99763: checking for tidyOptGetDoc in -ltidy
+configure:100126: checking whether to enable tokenizer support
+configure:100475: checking whether to enable WDDX support
+configure:100550: checking libexpat dir for WDDX
+configure:100581: checking for xml2-config path
+configure:100739: checking whether libxml build works
+configure:101333: checking whether to enable XML support
+configure:101408: checking libexpat install dir
+configure:101440: checking for xml2-config path
+configure:101598: checking whether libxml build works
+configure:102161: checking whether to enable XMLReader support
+configure:102240: checking for xml2-config path
+configure:102398: checking whether libxml build works
+configure:102807: checking for XMLRPC-EPI support
+configure:102882: checking libexpat dir for XMLRPC-EPI
+configure:102908: checking iconv dir for XMLRPC-EPI
+configure:102967: checking for xml2-config path
+configure:103125: checking whether libxml build works
+configure:104023: checking for ranlib
+configure:104051: checking for inline
+configure:104103: checking for ANSI C header files
+configure:104210: checking for xmlparse.h
+configure:104210: checking for xmltok.h
+configure:104210: checking for stdlib.h
+configure:104210: checking for strings.h
+configure:104210: checking for string.h
+configure:104252: checking size of char
+configure:104292: checking size of int
+configure:104331: checking size of long
+configure:104370: checking size of long long
+configure:104409: checking for size_t
+configure:104442: checking whether time.h and sys/time.h may both be included
+configure:104477: checking for uid_t in sys/types.h
+configure:104522: checking for strtoul
+configure:104522: checking for strtoull
+configure:104522: checking for snprintf
+configure:104522: checking for strstr
+configure:104522: checking for strpbrk
+configure:104522: checking for strerror
+configure:104522: checking for memcpy
+configure:104522: checking for memmove
+configure:105347: checking whether to enable XMLWriter support
+configure:105426: checking for xml2-config path
+configure:105584: checking whether libxml build works
+configure:105961: checking for XSL support
+configure:106164: checking for EXSLT support
+configure:106640: checking for zip archive read/writesupport
+configure:106736: checking for the location of zlib
+configure:107271: checking whether to install PEAR
+configure:107381: checking for bison version
+configure:107438: checking for inttypes.h
+configure:107438: checking for stdint.h
+configure:107438: checking for limits.h
+configure:107438: checking for malloc.h
+configure:107438: checking for string.h
+configure:107438: checking for unistd.h
+configure:107438: checking for stdarg.h
+configure:107438: checking for sys/types.h
+configure:107438: checking for sys/time.h
+configure:107438: checking for signal.h
+configure:107438: checking for unix.h
+configure:107438: checking for stdlib.h
+configure:107438: checking for mach-o/dyld.h
+configure:107438: checking for dlfcn.h
+configure:107476: checking for size_t
+configure:107509: checking return type of signal handlers
+configure:107555: checking for uint
+configure:107588: checking for ulong
+configure:107623: checking for int32_t
+configure:107644: gcc -c -I/usr/include -g -O2  conftest.c 1>&5
+configure:107663: checking for uint32_t
+configure:107684: gcc -c -I/usr/include -g -O2  conftest.c 1>&5
+configure:107703: checking for vprintf
+configure:107808: checking for 8-bit clean memcmp
+configure:107846: checking for working alloca.h
+configure:107879: checking for alloca
+configure:108080: checking for memcpy
+configure:108080: checking for strdup
+configure:108080: checking for getpid
+configure:108080: checking for kill
+configure:108080: checking for strtod
+configure:108080: checking for strtol
+configure:108080: checking for finite
+configure:108080: checking for fpclass
+configure:108134: checking whether sprintf is broken
+configure:108183: checking for finite
+configure:108183: checking for isfinite
+configure:108183: checking for isinf
+configure:108183: checking for isnan
+configure:108238: checking whether fp_except is defined
+configure:108285: checking for dlfcn.h
+configure:108323: checking whether dlsym() requires a leading underscore in symbol names
+configure:108393: gcc -o conftest -I/usr/include -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:108389:5: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+/tmp/cc74IJB0.o: In function `main':
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:108377: undefined reference to `dlopen'
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:108382: undefined reference to `dlsym'
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:108387: undefined reference to `dlerror'
+/home/chrisporterpace/phpsrc/php-5.2.17/configure:108383: undefined reference to `dlsym'
+collect2: ld returned 1 exit status
+configure:108476: checking virtual machine dispatch method
+configure:108480: checking whether to enable thread-safety
+configure:108484: checking whether to enable inline optimization for GCC
+configure:108488: checking whether to enable Zend debugging
+configure:108492: checking whether to enable Zend multibyte
+configure:108565: checking for inline
+configure:108608: checking target system is Darwin
+configure:108620: checking for MM alignment and log values
+configure:108664: gcc -o conftest -I/usr/include -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:108656:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long unsigned int' [-Wformat]
+configure:108659:3: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+configure:108689: checking for memory allocation using mmap(MAP_ANON)
+configure:108733: gcc -o conftest -I/usr/include -g -O2   conftest.c  1>&5
+configure:108755: checking for memory allocation using mmap(/dev/zero)
+configure:108809: gcc -o conftest -I/usr/include -g -O2   conftest.c  1>&5
+configure:108833: checking for mremap
+configure:108928: checking for stdarg.h
+configure:109970: checking build system type
+configure:109999: checking for ld used by gcc
+configure:110071: checking if the linker (/usr/bin/ld) is GNU ld
+configure:110091: checking for /usr/bin/ld option to reload object files
+configure:110116: checking for BSD-compatible nm
+configure:110169: checking how to recognize dependent libraries
+configure:110361: checking for object suffix
+configure:110387: checking for executable suffix
+configure:110492: gcc -c -I/usr/include -g -O2  conftest.c 1>&5
+configure:110626: checking the maximum length of command line arguments
+configure:110748: checking command to parse /usr/bin/nm -B output from gcc object
+configure:110946: checking for objdir
+configure:111012: checking for ar
+configure:111079: checking for ranlib
+configure:111146: checking for strip
+configure:111702: checking if gcc supports -fno-rtti -fno-exceptions
+configure:111752: checking for gcc option to produce PIC
+configure:111999: checking if gcc PIC flag -fPIC works
+configure:112062: checking if gcc static flag -static works
+configure:112100: checking if gcc supports -c -o file.o
+configure:112171: checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries
+configure:113115: checking whether -lc should be explicitly linked in
+configure:113119: gcc -c -I/usr/include -g -O2  conftest.c 1>&5
+configure:113133: gcc -shared conftest.o  -v -Wl,-soname -Wl,conftest -o conftest 2>&1 | grep  -lc  >/dev/null 2>&1
+configure:113152: checking dynamic linker characteristics
+configure:113777: checking how to hardcode library paths into programs
+configure:113815: checking whether stripping libraries is possible
+configure:114405: checking if libtool supports shared libraries
+configure:114409: checking whether to build shared libraries
+configure:114432: checking whether to build static libraries

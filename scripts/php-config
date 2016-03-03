@@ -1,0 +1,85 @@
+#! /bin/sh
+
+SED="/bin/sed"
+prefix="/usr/local/php52"
+exec_prefix="${prefix}"
+version="5.2.17"
+vernum="50217"
+include_dir="${prefix}/include/php"
+includes="-I$include_dir -I$include_dir/main -I$include_dir/TSRM -I$include_dir/Zend -I$include_dir/ext -I$include_dir/ext/date/lib"
+ldflags=" -L/usr/lib/x86_64-linux-gnu"
+libs="-lcrypt   -lz -lcrypt -lmhash -lmcrypt -lltdl -lssl -lcrypto -lbz2 -lz -lpcre -lssl -lcrypto -lresolv -lm -ldl -lnsl  -lxml2 -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lxml2 -lxml2 -lxml2 -lcrypt -lxml2 -lxml2 -lxml2 -lxml2 -lcrypt "
+extension_dir='/usr/local/php52/lib/php/20060613'
+program_prefix=""
+program_suffix=""
+exe_extension=""
+php_cli_binary=NONE
+php_cgi_binary=NONE
+configure_options=" '--prefix=/usr/local/php52' '--datadir=/usr/local/php52/share' '--with-config-file-path=/etc/php52' '--with-config-file-scan-dir=/etc/php52/conf.d' '--localstatedir=/usr/local/php52/var' '--with-regex=php' '--disable-rpath' '--disable-static' '--disable-posix' '--with-pic' '--with-layout=GNU' '--without-pear' '--enable-calendar=shared' '--enable-sysvsem' '--enable-sysvshm' '--enable-sysvmsg' '--enable-bcmath' '--with-bz2' '--enable-ctype' '--without-db4' '--without-gdbm' '--with-iconv' '--enable-exif' '--enable-ftp' '--enable-cli' '--with-gettext' '--enable-mbstring' '--with-pcre-regex=/usr' '--enable-shmop' '--enable-sockets' '--enable-wddx' '--with-libxml-dir=/usr' '--with-zlib' '--with-kerberos=/usr' '--with-openssl=/usr' '--enable-soap' '--enable-zip' '--with-mhash' '--with-exec-dir=/usr/lib/php5/libexec' '--without-mm' '--with-curl=shared,/usr' '--with-zlib-dir=/usr' '--with-gd=shared,/usr' '--enable-gd-native-ttf' '--with-gmp=shared' '--with-jpeg-dir=/usr' '--with-xpm-dir=/usr/X11R6' '--with-png-dir=/usr' '--with-freetype-dir=/usr' '--with-ttf=shared,/usr' '--with-ldap=shared,/usr' '--with-mysql=shared,/usr/bin/mysql_config' '--with-mysql-sock=/No-MySQL-hostname-was-specified' '--with-mysqli=shared,/usr/bin/mysql_config' '--with-pdo-mysql=shared,/usr/bin/mysql_config' '--with-pspell=shared' '--with-xsl=shared,/usr' '--with-sqlite=shared,/usr' '--with-tidy=shared' '--with-xmlrpc=shared' '--enable-pdo=shared' '--without-pdo-dblib' '--with-pdo-dblib=shared,/usr' '--enable-force-cgi-redirect' '--enable-fastcgi' '--with-libdir=/lib/x86_64-linux-gnu' '--with-pdo-sqlite=shared' '--with-sqlite=shared' '--enable-ipv6' '--with-mcrypt' '--with-imap-ssl'"
+php_sapis="cli cgi"
+
+# Set php_cli_binary and php_cgi_binary if available
+for sapi in $php_sapis; do
+  case $sapi in
+  cli)
+    php_cli_binary="${exec_prefix}/bin/${program_prefix}php${program_suffix}${exe_extension}"
+    ;;
+  cgi)
+    php_cgi_binary="${exec_prefix}/bin/${program_prefix}php-cgi${program_suffix}${exe_extension}"
+    ;;
+  esac
+done
+
+# Determine which (if any) php binary is available
+if test "$php_cli_binary" != "NONE"; then
+  php_binary="$php_cli_binary"
+else
+  php_binary="$php_cgi_binary"
+fi
+
+# Remove quotes
+configure_options=`echo $configure_options | $SED -e "s#'##g"`
+
+case "$1" in
+--prefix)
+  echo $prefix;;
+--includes)
+  echo $includes;;
+--ldflags)
+  echo $ldflags;;
+--libs)
+  echo $libs;;
+--extension-dir)
+  echo $extension_dir;;
+--include-dir)
+  echo $include_dir;;
+--php-binary)
+  echo $php_binary;;
+--php-sapis)
+  echo $php_sapis;;
+--configure-options)
+  echo $configure_options;;
+--version)
+  echo $version;;
+--vernum)
+  echo $vernum;;
+*)
+  cat << EOF
+Usage: $0 [OPTION]
+Options:
+  --prefix            [$prefix]
+  --includes          [$includes]
+  --ldflags           [$ldflags]
+  --libs              [$libs]
+  --extension-dir     [$extension_dir]
+  --include-dir       [$include_dir]
+  --php-binary        [$php_binary]
+  --php-sapis         [$php_sapis]
+  --configure-options [$configure_options]
+  --version           [$version]
+  --vernum            [$vernum]
+EOF
+  exit 1;;
+esac
+
+exit 0
